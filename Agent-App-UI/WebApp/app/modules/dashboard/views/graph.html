@@ -1,0 +1,93 @@
+<div class="round-pan">
+    <div class="scrollHeight">
+        <ul>
+            <li class="mouser-pointer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Select Active Site: </h4>
+                        <select ng-model="selectedActiveSite">
+                            <option ng-repeat="x in activeData" ng-click="getGraphData(x)" value="{{x.name}}">{{x.name}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Select Inactive Site:</h4>
+                        <select ng-model="selectedInactiveSite">
+                            <option ng-repeat="x in inactiveData" ng-click="getGraphData(x)" value="{{x.name}}">{{x.name}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Select Proposed Site:</h4>
+                        <select ng-model="selectedProposedSite">
+                            <option ng-repeat="x in proposedData" ng-click="getGraphData(x)" value="{{x.name}}">{{x.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                  <br/>
+                  <div ng-if="selectedSite">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div style="text-align: center;"><h4>{{selectedSite.name}}</h4></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div><b>Email :<b> {{selectedSite.email}} </div>
+                      <div>Web Address : {{selectedSite.web_address}}</div>
+                      <div>Hosted Platform : {{selectedSite.hosted_platform}}</div>
+                      <div>Status : {{selectedSite.status}}</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div>Conatct Number : {{selectedSite.contact_number}}</div>
+                      <div>View Count : {{selectedSite.view_count}}</div>
+                      <div>Address : {{selectedSite.address}}</div>
+                      <div>Description : {{selectedSite.description}}</div>
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="row">
+                  <div class="col-md-8">
+                      <canvas width='500' height='150'  id="line" class="chart chart-line" chart-data="quaterWiseData"
+                      chart-labels="quaterWiseLabel" chart-series="series2" chart-options="options"
+                      chart-dataset-override="datasetOverride" chart-click="onClick">
+                      </canvas>        
+                  </div>
+                  <div class="col-md-4">
+                      <h4>Chart Filter by hours:</h4>
+                      <select ng-model="quaterValueSelected">
+                          <option ng-repeat="x in chart1Interval" ng-click="filterQuaterChart(x)" value="{{x}}">{{x}}</option>
+                      </select>
+                  </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+                  <div class="row">
+                  <div class="col-md-8">
+                      <canvas width='500' height='150'  id="line" class="chart chart-line" chart-data="minWiseData"
+                      chart-labels="minWiseLabel" chart-series="series1" chart-options="options"
+                      chart-dataset-override="datasetOverride" chart-click="onClick">
+                      </canvas>        
+                  </div>
+                  <div class="col-md-4">
+                      <h4>Chart Filter by hours:</h4>
+                      <select ng-model="minValueSelected">
+                          <option ng-repeat="x in chart2Interval" ng-click="filterMinChart(x)" value="{{x}}">{{x}}
+                          </option>
+                      </select>
+                  </div>
+              </div>
+            </div>
+
+            <div <div ng-if="!selectedSite">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div style="text-align: center;"><h4>Please Select a Site To view Details</h4></div>
+                    </div>
+            </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
