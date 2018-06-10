@@ -1,18 +1,16 @@
-#CES Test Application
+## CES Test Application
 
 Application of Graphical Representation of data. Consist of Authentication, Authorization, Role Management, Data Generations, Admin management, Front End Application.
 
-##Getting Started
+### Getting Started
 
 See deployment for notes on how to deploy the project on a live system.
 
-##Prerequisites
+### Prerequisites
 
 Python, Mongo, Angular, MySQL
 
-##Quick Start
-
-#On Ubuntu
+### Quick Start On Ubuntu
 
 sudo apt-get install -y mongodb-org
 
@@ -29,7 +27,7 @@ Install requirements.txt
 
 pip install -r requirements/local.txt
 
-## Dependencies
+### Dependencies
 
 certifi==2017.4.17
 chardet==3.0.4
@@ -53,4 +51,4 @@ urllib3==1.21.1
 validate-email==1.3
 
 
-Happy Coding
+### Happy Coding
