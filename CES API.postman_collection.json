@@ -1,0 +1,414 @@
+{
+	"id": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+	"name": "CES API",
+	"description": "API for test Platform",
+	"order": [
+		"9e09a37d-920a-bd16-f9d0-ae0fa9325236",
+		"bf2e1c87-2b9f-18fd-2126-e6b0c604d38e",
+		"1bcdc812-9321-01ca-c282-ac86f18dc715",
+		"4854d1f5-663d-63f3-6132-b59eab8a00ba",
+		"cca61969-3a6d-ebf5-4462-c46b4dad405c",
+		"d21a20e6-dad6-8101-8db5-6ab0505a2526",
+		"546dd060-6445-ce45-49f5-beec0e646974",
+		"c38ea6d4-c18e-f49e-0842-bb7cdf89b41b",
+		"69a59ec0-2084-235d-79fe-7439278a2f6e",
+		"05a5bf8c-50e7-636f-5406-73834d2c8dcb",
+		"c26abf43-a24c-7241-1b2a-5c07abb8a823"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1528635371114,
+	"owner": 0,
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "05a5bf8c-50e7-636f-5406-73834d2c8dcb",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/site/data/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Data For Map 1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528637844377,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"instantaneous\": true\n\t\"time_interval\": 3\n}"
+		},
+		{
+			"id": "1bcdc812-9321-01ca-c282-ac86f18dc715",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/register/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "User/ Admin/ Reviewer Registration ",
+			"description": "PLease enter type as Reviewer or Developer or Admin",
+			"descriptionFormat": "html",
+			"time": 1528636114600,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"confirm_password\": \"admin123\",\n\t\"email\":\"faizan@admin.com\",\n\t\"first_name\":\"Faizeee\",\n\t\"number\":\"9766562329\",\n\t\"password\":\"admin123\",\n\t\"role\":\"Reviewer\"\n}"
+		},
+		{
+			"id": "4854d1f5-663d-63f3-6132-b59eab8a00ba",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/update-pwd/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Password",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528636778818,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"confirm_password\": \"9766562329\",\n\t\"email\":\"faizan@admin.com\",\n\t\"new_password\":\"9766562329\",\n\t\"password\":\"admin123\"\n}"
+		},
+		{
+			"id": "546dd060-6445-ce45-49f5-beec0e646974",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/site/data/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Site Data For Map",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528637491870,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"instantaneous\": true,\n\t\"interval\": true\n}"
+		},
+		{
+			"id": "69a59ec0-2084-235d-79fe-7439278a2f6e",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/site/data/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Custom Interval Site Data For Map",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528637816564,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"instantaneous\": true,\n\t\"interval\": true,\n\t\"time_interval\": 3\n}"
+		},
+		{
+			"id": "9e09a37d-920a-bd16-f9d0-ae0fa9325236",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/login/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Login API",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528635456699,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"email\": \"admin@admin.com\",\n\t\"password\": \"admin123\"\n}"
+		},
+		{
+			"id": "bf2e1c87-2b9f-18fd-2126-e6b0c604d38e",
+			"headers": "Authorization: Bearer dffXVprkjNIiSxNvXEnVm2qtUGXSwk\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer dffXVprkjNIiSxNvXEnVm2qtUGXSwk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/profile/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": null,
+			"dataMode": "params",
+			"name": "Retrive User Profile API",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528635526341,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c26abf43-a24c-7241-1b2a-5c07abb8a823",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/site/data/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Site Data with Custom time interval",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528640031112,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"instantaneous\": true\n\t\"time_interval\": 3\n}"
+		},
+		{
+			"id": "c38ea6d4-c18e-f49e-0842-bb7cdf89b41b",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/user/list/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get User List",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528637750870,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"instantaneous\": true,\n\t\"interval\": true\n}"
+		},
+		{
+			"id": "cca61969-3a6d-ebf5-4462-c46b4dad405c",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/logout/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Log Out",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1528636934457,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"confirm_password\": \"9766562329\",\n\t\"email\":\"faizan@admin.com\",\n\t\"new_password\":\"9766562329\",\n\t\"password\":\"admin123\"\n}"
+		},
+		{
+			"id": "d21a20e6-dad6-8101-8db5-6ab0505a2526",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer SH5ayeK8OqGBeXGQCUTRVtlBTGed1A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/site/list/",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1528637511501,
+			"name": "Get Site List Depending on role",
+			"description": "",
+			"collectionId": "ed1990f8-1e3d-7e85-7339-81c30598b02b",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"id\": 1,\n\t\"instantaneous\": true,\n\t\"interval\": true\n}"
+		}
+	]
+}
